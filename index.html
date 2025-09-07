@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <title>Portfolio</title>
@@ -11,59 +13,60 @@
 
 <body>
     <!-- Navbar -->
-     <header>
-    <nav class="navbar">
-        <h1>Omar.</h1>
-        <div class="list" id="list">
-            <ul class="nav-links">
-                <li><a href="#Home" class="navbar-link active">Home</a></li>
-                <li><a href="#About" class="navbar-link">About</a></li>
-                <li><a href="#Projects" class="navbar-link">Projects</a></li>
-                <li><a href="#Skills" class="navbar-link">Skills</a></li>
-                <li><a href="#Contact" class="navbar-link">Contact</a></li>
-            </ul>
-        </div>
-        <div class="menu-toggle" id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <h1>Omar.</h1>
+            <div class="list" id="list">
+                <ul class="nav-links">
+                    <li><a href="#Home" class="navbar-link active">Home</a></li>
+                    <li><a href="#About" class="navbar-link">About</a></li>
+                    <li><a href="#Projects" class="navbar-link">Projects</a></li>
+                    <li><a href="#Skills" class="navbar-link">Skills</a></li>
+                    <li><a href="#Contact" class="navbar-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
     <!------------Home--------------->
     <section id="Home" class="Home">
-    <div class="Home-content">
-        <div class="introduction">
-            <h2 id="Home">Omar Hosny</h2>
-            <div class="animated-text">
-                I'm a <span></span>
-                <p>
-                    I create beautiful, functional websites with clean code and modern design principles. Passionate about
-                    user experience and responsive design.
-                </p>
+        <div class="Home-content">
+            <div class="introduction">
+                <h2 id="Home" class="fw-bolder my-4">Omar Hosny</h2>
+                <div class="animated-text">
+                    I'm a <span></span>
+                    <p>
+                        I create beautiful, functional websites with clean code and modern design principles. Passionate
+                        about
+                        user experience and responsive design.
+                    </p>
+                </div>
+                <div class="links">
+                    <a href=""><i class='bx bxl-github'></i></a>
+                    <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                    <a href=""><i class='bx bxl-whatsapp'></i></a>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" Download>Download CV</button>
+                    <button class="btn btn-secoundry">Contact Me</button>
+                </div>
+
             </div>
-            <div class="links">
-                <a href=""><i class='bx bxl-github'></i></a>
-                <a href=""><i class='bx bxl-linkedin-square' ></i></a>
-                <a href=""><i class='bx bxl-whatsapp' ></i></a>
-            </div>
-            <div class="cta-buttons">
-                <button class="btn btn-primary" Download>Download CV</button>
-                <button class="btn btn-secoundry">Contact Me</button>
-            </div>
-            
+            <figure class="photo1 ratio ratio-1x1 mx-auto" style="width: 280px;">
+                <img class="w-100 h-100 rounded-circle " src="IMG-20241031-WA0033.jpg" alt="">
+            </figure>
         </div>
-            <div class="photo1">
-                <img src="img/IMG-20241031-WA0033.jpg" alt="#">
-            </div>
-    </div>
     </section>
     <!--------------about----------->
     <section id="About" class="about animate-on-scroll">
-            <h2 class="container-title">About Me</h2>
-            <div class="about-content" id="about-content">
-                <div class="Technical-Skills">
-                    <h3 class="animate-child">Technical-Skills</h3>
+        <h2 class="container-title">About Me</h2>
+        <div class="about-content" id="about-content">
+            <div class="Technical-Skills">
+                <h3 class="animate-child">Technical-Skills</h3>
                 <div class="skill-bar">
                     <div class="info">
                         <p>HTML5</p>
@@ -91,132 +94,128 @@
                         <span class="JS animate-child"></span>
                     </div>
                 </div>
-                </div>
-                <div class="about-text">
-                    <h3 class="animate-child">My Journey in Web Development</h3>
-                    <p class="animate-child">
-                        With over 5 years of experience in frontend development, I specialize in creating responsive,
-                        accessible websites that provide exceptional user experiences. I'm passionate about clean code
-                        and modern JavaScript frameworks.
-                        <br>My approach combines technical expertise with creative problem-solving to deliver solutions
-                        that meet both business objectives and user needs. I stay current with the latest web
-                        technologies and design trends.
-                        <br>When I'm not coding, you can find me hiking, reading about emerging technologies, or
-                        experimenting with new recipes in the kitchen.
-                    </p>
-                </div>
             </div>
+            <div class="about-text">
+                <h3 class="animate-child">My Journey in Web Development</h3>
+                <p class="animate-child">
+                    With over 5 years of experience in frontend development, I specialize in creating responsive,
+                    accessible websites that provide exceptional user experiences. I'm passionate about clean code
+                    and modern JavaScript frameworks.
+                    <br>My approach combines technical expertise with creative problem-solving to deliver solutions
+                    that meet both business objectives and user needs. I stay current with the latest web
+                    technologies and design trends.
+                    <br>When I'm not coding, you can find me hiking, reading about emerging technologies, or
+                    experimenting with new recipes in the kitchen.
+                </p>
+            </div>
+        </div>
     </section>
     <!---------Projects--------->
     <section id="Projects" class="Projects animate-on-scroll">
-            <h2 class="container-title">My Projects</h2>
-            <div class="content-projects">
-                <div class="projects-content animate-child">
-                    <img class="project-img animate-child" src="img/Screenshot 2025-07-30 122052.png" alt="#">
-                    <h3 class="animate-child">Dashboard</h3>
-                    <p class="animate-child">A modern and responsive admin dashboard built to visualize data,
-                        manage users,and streamline workflow operations.
-                    </p>
+        <h2 class="container-title">My Projects</h2>
+        <div class="content-projects py-2 mx-lg-5 my-5 animate-child">
+            <div class="card w-100 hover text-center" style="width: 18rem;">
+                <img src="img/Screenshot 2025-07-30 122052.png" class="card-img-top animate-child" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title ">Dashboard</h4>
+                    <p class="card-text text-white-50">A modern and responsive admin dashboard built to visualize data,
+                        manage users,and streamline workflow operations.</p>
                     <a href="#" class="btn btn-primary">Demo</a>
-                    <a href="#" class="btn btn-secoundry">Code</a>
+                    <a href="#" class="btn btn-secondary">Code</a>
                 </div>
-                <div class="projects-content animate-child">
-                    <img class="project-img animate-child" src="img/Screenshot 2025-07-30 122327.png" alt="#">
-                    <h3 class="animate-child">A Smarter Way to Manage Your Copy History</h3>
-                    <p class="animate-child">This is clean and modern landing page desugned for the clipboard app,
-                        which helps users track and organize everything they copy across multiple devices.
-                    </p>
+            </div>
+            <div class="card animate-child w-100 " style="width: 18rem;">
+                <img src="img/Screenshot 2025-07-30 122327.png" class="card-img-top animate-child" alt="...">
+                <div class="card-body animate-child">
+                    <h4 class="card-title animate-child">A Smarter Way to Manage Your Copy History</h4>
+                    <p class="card-text animate-child text-white-50">This is clean and modern landing page desugned for
+                        the clipboard app,
+                        which helps users track and organize everything they copy across multiple devices.</p>
                     <a href="#" class="btn btn-primary">Demo</a>
-                    <a href="#" class="btn btn-secoundry">Code</a>
+                    <a href="#" class="btn btn-secondary">Code</a>
                 </div>
-                <div class="projects-content animate-child">
-                    <img class="project-img animate-child" src="img/Screenshot 2025-08-03 172459.png" alt="#">
-                    <h3 class="animate-child">DigitalBank</h3>
-                    <p class="animate-child">Take your financial life online. Your Digitalbank account will be a one-stop-shop for spending,
-                        saving, budgeting, investing, and much more.
-                    </p>
+            </div>
+            <div class="card animate-child w-100  " style="width: 18rem;">
+                <img src="img/Screenshot 2025-08-03 172459.png" class="card-img-top animate-child" alt="...">
+                <div class="card-body animate-child">
+                    <h4 class="card-title animate-child">DigitalBank</h4>
+                    <p class="card-text animate-child text-white-50">Take your financial life online. Your Digitalbank
+                        account will be a one-stop-shop for spending,
+                        saving, budgeting, investing, and much more.</p>
                     <a href="#" class="btn btn-primary">Demo</a>
-                    <a href="#" class="btn btn-secoundry">Code</a>
+                    <a href="#" class="btn btn-secondary">Code</a>
                 </div>
             </div>
     </section>
     <!--------------Skills----------------->
     <section id="Skills" class="Skills animate-on-scroll">
-            <h2 class="container-title">My Skills</h2>
-            <div class="content-skills">
-                <div class="skills-content animate-child">
-                    <h3>Html5</h3>
-                    <p>Semantic markup, accessibility, SEO best practices</p>
-                </div>
-                <div class="skills-content animate-child">
-                    <h3>CSS3</h3>
-                    <p>Flexbox, Grid, animations, responsive design</p>
-                </div>
-                <div class="skills-content animate-child">
-                    <h3>JavaScript</h3>
-                    <p>ES6+, DOM manipulation, async programming</p>
-                </div>
+        <h2 class="container-title">My Skills</h2>
+        <div class="content-skills">
+            <div class="skills-content animate-child">
+                <h3>Html5</h3>
+                <p>Semantic markup, accessibility, SEO best practices</p>
             </div>
+            <div class="skills-content animate-child">
+                <h3>CSS3</h3>
+                <p>Flexbox, Grid, animations, responsive design</p>
+            </div>
+            <div class="skills-content animate-child">
+                <h3>JavaScript</h3>
+                <p>ES6+, DOM manipulation, async programming</p>
+            </div>
+        </div>
     </section>
     <!-------------Contact------------>
     <section id="Contact" class="Contact animate-on-scroll">
-            <h2 class="container-title">Get In Touch</h2>
-            <div class="content-contact">
-                <div class="contact-content">
-                    <div class="left animate-child">
-                        <div class="icons">
-                            <i class='bx bx-envelope'></i>
-                        </div>
-                        <div class="text1">
-                            <h3>Email</h3>
-                            <p>Omhosny66@gmail.com</p>
-                        </div>
+        <h2 class="container-title">Get In Touch</h2>
+        <div class="content-contact">
+            <div class="contact-content">
+                <div class="left animate-child">
+                    <div class="icons">
+                        <i class='bx bx-envelope'></i>
                     </div>
-                    <div class="left animate-child">
-                        <div class="icons">
-                            <i class='bx bxs-phone'></i>
-                        </div>
-                        <div class="text1">
-                            <h3>Phone</h3>
-                            <p>+201225893594</p>
-                        </div>
-                    </div>
-                    <div class="left animate-child">
-                        <div class="icons">
-                            <i class='bx bxs-map'></i>
-                        </div>
-                        <div class="text1">
-                            <h3>Location</h3>
-                            <p>Egypt, Qalyubia</p>
-                        </div>
+                    <div class="text1">
+                        <h3>Email</h3>
+                        <p>Omhosny66@gmail.com</p>
                     </div>
                 </div>
-                <div class="label animate-child">
-                    <table>
-                        <form action="">
-                            <tr>
-                                <td>
-                                    <input type="text" id="Name" name="Name" placeholder="Name">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="email" name="Email" id="Email" placeholder="Email">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <textarea name="message" id="message" placeholder="Your Message" required></textarea>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <button class="btn btn-primary">Send Message</button>
-                                </td>
-                            </tr>
-                        </form>
-                    </table>
+                <div class="left animate-child">
+                    <div class="icons">
+                        <i class='bx bxs-phone'></i>
+                    </div>
+                    <div class="text1">
+                        <h3>Phone</h3>
+                        <p>+201225893594</p>
+                    </div>
+                </div>
+                <div class="left animate-child">
+                    <div class="icons">
+                        <i class='bx bxs-map'></i>
+                    </div>
+                    <div class="text1">
+                        <h3>Location</h3>
+                        <p>Egypt, Qalyubia</p>
+                    </div>
                 </div>
             </div>
+            <div class="label animate-child shadow ">
+                <div class="mb-3">
+                    <label for="Name" class="form-label ">Name</label>
+                    <input type="text" class="form-control" id="Name" placeholder="Name">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Message"></textarea>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                </div>
+            </div>
+        </div>
     </section>
     <!-------- footer--- -->
     <footer>
@@ -225,8 +224,12 @@
             <a href="#">Terms of Service</a>
             <a href="#">Sitemap</a>
         </div>
-            <p class="footer-text">© 2025 Omar Hosny. All rights reserved.</p>
+        <p class="footer-text">© 2025 Omar Hosny. All rights reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
