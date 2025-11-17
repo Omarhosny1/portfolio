@@ -171,10 +171,10 @@ canvas{
     content: "";
     position: absolute;
     width: calc(100% + 8px);
-    height: 6vh;
+    height: clamp(1.2em, 1vw, 2em);
     border-left: 2px solid chartreuse;
     background: #1f242d;
-    top: 3.7px;
+    top: 2.7px;
     right: -8px;
     animation: cursor .8s infinite, typing 20s steps(16) infinite;
 }
