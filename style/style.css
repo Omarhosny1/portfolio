@@ -396,119 +396,17 @@ canvas{
     color: chartreuse;
     padding: 1em 0;
 }
-
-.Technical-Skills h3.animate-child {
-    animation: sideUp 2s ease 0.9s backwards;
-}
-
-.Technical-Skills .skill-bar .info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1em;
-}
-
-.Technical-Skills .skill-bar .bar {
-    width: 100%;
-    height: 10px;
+.icon{
+    width: 4em;
+    height: 3.5em;
+    text-align: center;
     background-color: #30353f;
-    border-radius: 25px;
-    margin-top: 0.75em;
-    position: relative;
 }
-
-.Technical-Skills .skill-bar .bar.animate-child {
-    animation: sideLeft 2s ease 0.9s backwards;
+.discription h4{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: chartreuse;
 }
-
-.skill-bar {
-    margin-bottom: 2em;
-}
-
-.skill-bar .bar .HTML {
-    width: 95%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    background-color: chartreuse;
-    border-radius: 25px;
-    box-shadow: 0 0 10px chartreuse;
-    animation: HTML 2s ease;
-}
-
-.skill-bar .bar .CSS {
-    width: 90%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    background-color: chartreuse;
-    border-radius: 25px;
-    box-shadow: 0 0 10px chartreuse;
-    animation: CSS 2s ease;
-}
-
-.skill-bar .bar .JS {
-    width: 75%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    background-color: chartreuse;
-    border-radius: 25px;
-    box-shadow: 0 0 10px chartreuse;
-    animation: JS 2s ease;
-}
-
-.skill-bar .bar .React {
-    width: 40%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    background-color: chartreuse;
-    border-radius: 25px;
-    box-shadow: 0 0 10px chartreuse;
-    animation: React 2s ease;
-}
-
-@keyframes HTML {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 95%;
-    }
-}
-
-@keyframes CSS {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 90%;
-    }
-}
-
-@keyframes JS {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 75%;
-    }
-}
-
-@keyframes React {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 40%;
-    }
-}
-
 .about-text {
     width: 90%;
 }
@@ -593,6 +491,9 @@ canvas{
 .card:nth-child(7) {
     --delay: 1.9s;
 }
+.card:nth-child(8) {
+    --delay: 2.1s;
+}
 
 /* -----------Skills------------------- */
 .skills-section {
@@ -614,6 +515,7 @@ canvas{
 
 .skill-card {
     background: #30353f;
+    text-align: center;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     padding: 2em 1.25em;
@@ -763,23 +665,6 @@ footer p {
         margin-bottom: 2em;
     }
 
-    .content-skills {
-        height: auto;
-    }
-
-    .skills-content:nth-child(1)::after,
-    .skills-content:nth-child(3)::after {
-        content: "";
-        position: absolute;
-        right: calc(0% - 45px);
-    }
-
-    .skills-content:nth-child(2)::before {
-        content: "";
-        position: absolute;
-        left: calc(0% - 43px);
-    }
-
     .Contact {
         height: auto;
         margin-bottom: 1.5em;
@@ -787,33 +672,6 @@ footer p {
 
     footer {
         height: auto;
-    }
-}
-
-@media (max-width:1000px) {
-    .skills-content:nth-child(1) {
-        left: 15%;
-    }
-
-    .skills-content:nth-child(2) {
-        left: 53%;
-    }
-
-    .skills-content:nth-child(3) {
-        left: 15%;
-    }
-
-    .skills-content:nth-child(1)::after,
-    .skills-content:nth-child(3)::after {
-        content: "";
-        position: absolute;
-        right: calc(0% - 38px);
-    }
-
-    .skills-content:nth-child(2)::before {
-        content: "";
-        position: absolute;
-        left: calc(0% - 38px);
     }
 }
 
@@ -838,6 +696,7 @@ footer p {
         height: 0;
         flex-direction: column;
         overflow: hidden;
+        border-radius: 10px;
         transition: height 0.5s ease, opacity 0.5s ease;
     }
 
@@ -882,48 +741,6 @@ footer p {
 
     .about-content .about-text {
         text-align: center;
-    }
-
-    .Skills {
-        height: auto;
-    }
-
-    .content-skills::before {
-        content: "";
-        position: absolute;
-        left: 10px;
-        height: 90%;
-    }
-
-    .skills-content {
-        width: 90%;
-    }
-
-    .skills-content:nth-child(1) {
-        margin: 3em 0 4em 0;
-        left: 30px;
-    }
-
-    .skills-content:nth-child(2) {
-        margin-bottom: 3em;
-        left: 30px;
-    }
-
-    .skills-content:nth-child(3) {
-        margin-bottom: 2em;
-        left: 30px;
-    }
-
-    .skills-content::after {
-        content: "";
-        position: absolute;
-        left: calc(0% - 26px);
-    }
-
-    .skills-content:nth-child(2)::before {
-        content: "";
-        position: absolute;
-        left: calc(0% - 26px);
     }
 
     .content-contact {
