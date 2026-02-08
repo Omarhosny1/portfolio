@@ -12,7 +12,14 @@ html {
 body {
     color: white;
     background: #1f242d;
-    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
 }
 
 /* ------------------Navbar------------------------------ */
@@ -29,16 +36,13 @@ body {
     height: 10vh;
 }
 
-.navbar h1 {
+.navbar span {
     font-size: 3em;
     font-weight: 600;
     width: 30%;
     color: rgb(130, 248, 13);
 }
 
-a {
-    text-decoration: none;
-}
 
 .list ul {
     display: flex;
@@ -121,7 +125,7 @@ a {
     margin-bottom: 1em;
 }
 
-canvas{
+canvas {
     display: block;
     position: absolute;
     top: 0;
@@ -143,7 +147,7 @@ canvas{
     animation: sideUp 1s ease 0.9s backwards;
 }
 
-.introduction h2 {
+.introduction h1 {
     font-size: clamp(3em, 4vw, 4em);
     background: linear-gradient(to right, white, chartreuse, #30353f);
     background-clip: text;
@@ -229,6 +233,13 @@ canvas{
     margin: 1em 0px;
     margin-bottom: 25px;
     color: rgb(161, 160, 160);
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
 .btn {
@@ -345,7 +356,6 @@ canvas{
 
 /* ----------------------------------About------------------------------------------ */
 .about {
-    height: 70vh;
     margin-bottom: 1em;
 }
 
@@ -396,17 +406,20 @@ canvas{
     color: chartreuse;
     padding: 1em 0;
 }
-.icon{
+
+.icon {
     width: 4em;
     height: 3.5em;
     text-align: center;
     background-color: #30353f;
 }
-.discription h4{
+
+.discription h4 {
     font-size: 1.5em;
     font-weight: 600;
     color: chartreuse;
 }
+
 .about-text {
     width: 90%;
 }
@@ -418,28 +431,32 @@ canvas{
     padding: 1em 0;
 }
 
-.about-text h3.animate-child {
-    animation: sideUp 2s ease 0.9s backwards;
+.about-text .animate-child {
+    animation: sideUp 1.5s ease 0.7s backwards;
 }
 
 .about-text p {
     font-size: 1em;
 }
 
-.about-text p.animate-child {
-    animation: sideUp 2s ease 1s backwards;
+.about-text .animate-child {
+    animation: sideUp 1.5s ease 0.8s backwards;
 }
 
 /* ------------Projectcs------------------------------- */
-.Projects {
-    height: auto;
-}
-
 .content-projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     place-items: center;
     gap: 2em;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 2em;
 }
 
 .content-projects.animate-child {
@@ -449,8 +466,16 @@ canvas{
 .card {
     /* width: 100%; */
     background-color: #30353f;
-    height: auto;
     transition: all 0.5s ease;
+    height: 60vh;
+}
+
+.card-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
 }
 
 .card:hover {
@@ -479,18 +504,23 @@ canvas{
 .card:nth-child(3) {
     --delay: 1.1s;
 }
+
 .card:nth-child(4) {
     --delay: 1.3s;
 }
+
 .card:nth-child(5) {
     --delay: 1.5s;
 }
+
 .card:nth-child(6) {
     --delay: 1.7s;
 }
+
 .card:nth-child(7) {
     --delay: 1.9s;
 }
+
 .card:nth-child(8) {
     --delay: 2.1s;
 }
@@ -501,7 +531,8 @@ canvas{
     background-color: #1f242d;
     text-align: center;
 }
-.skills-section.animate-child{
+
+.skills-section.animate-child {
     animation: sideUp 2s ease 0.6s backwards;
 }
 
@@ -522,20 +553,25 @@ canvas{
     width: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.skill-card.animate-child{
+
+.skill-card.animate-child {
     animation: sideUp 2s ease var(--delay) backwards;
 }
-.skill-card:nth-child(1){
-    --delay : 0.7s;
+
+.skill-card:nth-child(1) {
+    --delay: 0.7s;
 }
-.skill-card:nth-child(2){
-    --delay : 0.8s;
+
+.skill-card:nth-child(2) {
+    --delay: 0.8s;
 }
-.skill-card:nth-child(3){
-    --delay : 0.9s;
+
+.skill-card:nth-child(3) {
+    --delay: 0.9s;
 }
-.skill-card:nth-child(4){
-    --delay : 1s;
+
+.skill-card:nth-child(4) {
+    --delay: 1s;
 }
 
 .skill-card:hover {
@@ -562,10 +598,6 @@ canvas{
 }
 
 /* ----------Contact----------- */
-.Contact {
-    height: auto;
-}
-
 .content-contact {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -606,7 +638,6 @@ canvas{
     background-color: #30353f;
     border-radius: 10px;
     margin-top: 5em;
-    height: auto;
 }
 
 .label.animate-child {
@@ -622,7 +653,6 @@ footer {
     background-color: #30353f;
     text-align: center;
     padding: 2em 0;
-    height: auto;
     margin-top: 2em;
 }
 
