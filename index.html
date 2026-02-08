@@ -13,383 +13,406 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar">
-            <span>Omar.</span>
-            <div class="list" id="list">
-                <ul class="nav-links">
-                    <li><a href="#Home" class="navbar-link active">Home</a></li>
-                    <li><a href="#About" class="navbar-link">About</a></li>
-                    <li><a href="#Projects" class="navbar-link">Projects</a></li>
-                    <li><a href="#Skills" class="navbar-link">Skills</a></li>
-                    <li><a href="#Contact" class="navbar-link">Contact</a></li>
+    <main>
+        <!-- Navbar -->
+        <header>
+            <nav class="navbar">
+                <span>Omar.</span>
+                <div class="list" id="list">
+                    <ul class="nav-links">
+                        <li><a href="#Home" class="navbar-link active">Home</a></li>
+                        <li><a href="#About" class="navbar-link">About</a></li>
+                        <li><a href="#Projects" class="navbar-link">Projects</a></li>
+                        <li><a href="#Skills" class="navbar-link">Skills</a></li>
+                        <li><a href="#Contact" class="navbar-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+        <!------------Home--------------->
+        <section id="Home" class="Home">
+            <canvas id="canvas"></canvas>
+            <div class="Home-content">
+                <div class="introduction">
+                    <h1 id="Home" class="shiny-text fw-bolder my-4">Omar Hosny</h1>
+                    <article class="animated-text">
+                        I'm a <span></span>
+                        <p>
+                            I create beautiful, functional websites with clean code and modern design principles.
+                            Passionate
+                            about
+                            user experience and responsive design.
+                        </p>
+                    </article>
+                    <div class="links">
+                        <ul class="social-links">
+                            <li><a href="https://github.com/Omarhosny1" aria-label="omar hosny Github Profile"><i
+                                        class='bx bxl-github' aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/omar-hosny-732021390/"
+                                    aria-label="omar hosny LinkedIn Profile"><i class='bx bxl-linkedin-square' aria-hidden="true"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/omar.hosny.732021390"
+                                    aria-label="omar hosny Instagram Profile"><i class='bx bxl-instagram' aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/omar-hosny-732021390/"
+                                    aria-label="omar hosny LinkedIn Profile"><i class='bx bxl-linkedin-square' aria-hidden="true"></i></a>
+                            </li>
+                            <li><a href="https://wa.me/2001223891024" aria-label="omar hosny WhatsApp Profile"><i
+                                        class='bx bxl-whatsapp' aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="cta-buttons">
+                        <ul class="social-links">
+                            <li><a class="btn btn-primary" href="CV/Omar-hosny-FlowCV-Resume-20251023.pdf"
+                                    Download>Download
+                                    CV</a></li>
+                            <li><a href="#Contact" class="btn btn-secoundry">Contact Me</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <figure class="photo1 ratio ratio-1x1 mx-auto" style="width: 320px;">
+                    <img loading="lazy" class="w-100 h-100 rounded-circle " src="./img/Presonal Photo.jpg"
+                        alt="Omar Hosny Photo">
+                </figure>
+            </div>
+        </section>
+        <!--------------about----------->
+        <section id="About" class="about animate-on-scroll">
+            <h2 class="container-title">About Me</h2>
+            <div class="about-content" id="about-content">
+                <div class="Technical-Skills w-75">
+                    <div class="shadow w-100 p-2 rounded-4 d-flex align-items-center gap-3 mb-4 animate-child">
+                        <div class="icon rounded-3 text-center p-2" aria-label="Web Development Icon"><i
+                                class='bx bx-code-alt bx-tada fs-1' aria-hidden="true"></i></div>
+                        <article class="discription">
+                            <h4>Web Development</h4>
+                            <p>Creating responsive websites and web applications with modern frameworks.</p>
+                        </article>
+                    </div>
+                    <div class="w-100 shadow p-2 rounded-4 d-flex align-items-center gap-3 mb-4 animate-child">
+                        <div class="icon rounded-3 text-center p-2" aria-label="Project Management Icon"><i
+                                class='bx bxs-briefcase-alt-2 bx-flashing fs-1' aria-hidden="true"></i></div>
+                        <article class="discription">
+                            <h4>Project Management</h4>
+                            <p>Leading Projects from conception to completion with agile methodologles.</p>
+                        </article>
+                    </div>
+                    <div class="w-100 shadow p-2 rounded-4 d-flex align-items-center gap-3 mb-4 animate-child">
+                        <div class="icon rounded-3 text-center p-2" aria-label="SEO & Accessibility Icon"><i
+                                class='bx bx-bulb bx-tada fs-1' aria-hidden="true"></i></div>
+                        <article class="discription">
+                            <h4>Improving SEO & Accessibility</h4>
+                            <p>Building Accessible, SEO-Friendly & High-Performance Web Experiences.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <article class="about-text">
+                    <h3 class="animate-child">My Journey in Web Development</h3>
+                    <p class="animate-child">
+                        I specialize in creating responsive,
+                        accessible websites that provide exceptional user experiences. I'm passionate about clean code
+                        and modern JavaScript frameworks.
+                        <br>My approach combines technical expertise with creative problem-solving to deliver solutions
+                        that meet both business objectives and user needs. I stay current with the latest web
+                        technologies and design trends.
+                        <br>When I'm not coding, you can find me reading about emerging technologies.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <!---------Projects--------->
+        <section id="Projects" class="Projects animate-on-scroll">
+            <h2 class="container-title">My Projects</h2>
+            <div class='w-100 d-flex justify-content-center gap-3 my-5 flex-wrap'>
+                <ul class="filter-buttons">
+                    <li><button class='btn btn-primary filter' data-filter="All"
+                            onclick="filterItems('All')">All</button>
+                    </li>
+                    <li><button class='btn btn-primary filter' data-filter="HTML-CSS"
+                            onclick="filterItems('HTML-CSS')">HTML-CSS</button></li>
+                    <li><button class='btn btn-primary filter' data-filter="HTML-CSS-JS"
+                            onclick="filterItems('HTML-CSS-JS')">HTML-CSS-JS</button></li>
+                    <li><button class='btn btn-primary filter' data-filter="React.js"
+                            onclick="filterItems('React.js')">React.js</button></li>
                 </ul>
             </div>
-            <div class="menu-toggle" id="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="content-projects p-2 mx-lg-5 my-5 animate-child">
+                <div class="card w-100 hover text-center project HTML-CSS-JS" style="width: 18rem;">
+                    <figure>
+                        <img loading="lazy" src="img/CinaVerse.png" class="card-img-top animate-child " alt="CinaVerse">
+                    </figure>
+                    <article class="card-body">
+                        <h3 class="card-title ">CinaVerse</h3>
+                        <p class="card-text text-white-50">A website for team Fluter make application Films and you can
+                            download application, the website is responsive and clean</p>
+                    </article>
+                    <div>
+                        <ul class="card-links">
+                            <li><a href="https://omarhosny1.github.io/varse/" class="btn btn-primary ">Demo</a></li>
+                            <li><a href="https://github.com/Omarhosny1/varse" class="btn btn-secondary">Code</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card animate-child w-100 text-center  project HTML-CSS" style="width: 18rem;">
+                    <figure>
+                        <img loading="lazy" src="img/Copy History.png" class="card-img-top animate-child"
+                            alt="Copy History">
+                    </figure>
+                    <article class="card-body animate-child">
+                        <h3 class="card-title animate-child">A Smarter Way to Manage Your Copy History</h3>
+                        <p class="card-text animate-child text-white-50">This is clean and modern landing page desugned
+                            for
+                            the clipboard app,
+                            which helps users track and organize everything they copy across multiple devices.</p>
+                    </article>
+                    <div>
+                        <ul class="card-links">
+                            <li><a href="https://omarhosny1.github.io/copyHestory/" class="btn btn-primary">Demo</a>
+                            </li>
+                            <li><a href="https://github.com/Omarhosny1/copyHestory" class="btn btn-secondary">Code</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card animate-child w-100 text-center project HTML-CSS-JS" style="width: 18rem;">
+                    <figure>
+                        <img loading="lazy" src="img/DigitalBank.png" alt="DigitalBank"
+                            class="card-img-top animate-child ">
+                    </figure>
+                    <article class="card-body animate-child">
+                        <h3 class="card-title animate-child">DigitalBank</h3>
+                        <p class="card-text animate-child text-white-50">Take your financial life online. Your
+                            Digitalbank
+                            account will be a one-stop-shop for spending,
+                            saving, budgeting, investing, and much more.</p>
+                    </article>
+                    <div>
+                        <ul class="card-links">
+                            <li><a href="https://omarhosny1.github.io/DigitalBank/" class="btn btn-primary">Demo</a>
+                            </li>
+                            <li><a href="https://github.com/Omarhosny1/DigitalBank" class="btn btn-secondary">Code</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card animate-child w-100 text-center project HTML-CSS" style="width: 18rem;">
+                    <figure>
+                        <img loading="lazy" src="img/GDG.png" class="card-img-top animate-child "
+                            alt="Final Project in GDG">
+                    </figure>
+                    <article class="card-body animate-child">
+                        <h3 class="card-title animate-child">Final Project in GDG</h3>
+                        <p class="card-text animate-child text-white-50">Final Project in GDG use HTML and Css</p>
+                    </article>
+                    <div>
+                        <ul class="card-links">
+                            <li><a href="https://omarhosny1.github.io/GDGCompitition/" class="btn btn-primary">Demo</a>
+                            </li>
+                            <li><a href="https://github.com/Omarhosny1/GDGCompitition"
+                                    class="btn btn-secondary">Code</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card animate-child w-100 text-center project HTML-CSS" style="width: 18rem;">
+                    <figure>
+                        <img loading="lazy" src="img/Dashboard.png" class="card-img-top animate-child " alt="Dashboard">
+                    </figure>
+                    <article class="card-body animate-child">
+                        <h3 class="card-title animate-child">Dashboard</h3>
+                        <p class="card-text animate-child text-white-50">A smart and user-friendly dashboard that
+                            provides
+                            real-time insights into users, posts, products, and revenue, along with a detailed product
+                            table
+                            showing prices and stock quantities.</p>
+                    </article>
+                    <div>
+                        <ul class="card-links">
+                            <li><a href="https://omarhosny1.github.io/Dashboard/" class="btn btn-primary">Demo</a></li>
+                            <li><a href="https://github.com/Omarhosny1/Dashboard" class="btn btn-secondary">Code</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card animate-child w-100 text-center project HTML-CSS" style="width: 18rem;">
+                    <figure>
+                        <img loading="lazy" src="img/Mini Project.png" class="card-img-top animate-child "
+                            alt="miniProject in ITI">
+                    </figure>
+                    <article class="card-body animate-child">
+                        <h3 class="card-title animate-child">mini Project</h3>
+                        <p class="card-text animate-child text-white-50">A smart mini Project in ITI Benha use HTML and
+                            CSS
+                        </p>
+                    </article>
+                    <div>
+                        <ul class="card-links">
+                            <li><a href="https://omarhosny1.github.io/miniProject/" class="btn btn-primary">Demo</a>
+                            </li>
+                            <li><a href="https://github.com/Omarhosny1/miniProject" class="btn btn-secondary">Code</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card animate-child w-100 text-center project React.js" style="width: 18rem;">
+                    <figure>
+                        <img loading="lazy" src="img/Final Project.png" class="card-img-top animate-child "
+                            alt="E-Commerce">
+                    </figure>
+                    <article class="card-body animate-child">
+                        <h3 class="card-title animate-child">E-Commerce</h3>
+                        <p class="card-text animate-child text-white-50">Discover the latest in tech with M&O Online
+                            Shopping!
+                            Shop top-quality laptops, smartphones, tablets, and smartwatches from leading brands.</p>
+                    </article>
+                    <div>
+                        <ul class="card-links">
+                            <li><a href="https://omarhosny1.github.io/DigitalBank/" class="btn btn-primary">Demo</a>
+                            </li>
+                            <li><a href="https://github.com/Omarhosny1/DigitalBank" class="btn btn-secondary">Code</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card animate-child w-100 text-center project React.js" style="width: 18rem;">
+                    <figure>
+                        <img loading="lazy" src="img/Task Manager.png" class="card-img-top animate-child "
+                            alt="Task Manager">
+                    </figure>
+                    <article class="card-body animate-child">
+                        <h3 class="card-title animate-child">Task Manager</h3>
+                        <p class="card-text animate-child text-white-50">Task Manager helps you organize your work,
+                            track
+                            progress, and stay productive every day.
+                            Stay on top of your goals with Task Manager — the simple and smart way to manage your tasks.
+                        </p>
+                    </article>
+                    <div>
+                        <ul class="card-links">
+                            <li><a href="https://taskmanagerapps1.netlify.app/" class="btn btn-primary">Demo</a></li>
+                            <li><a href="https://github.com/Omarhosny1/Task-Manager" class="btn btn-secondary">Code</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+        <!--------------Skills----------------->
+        <section id="Skills" class="skills-section animate-on-scroll">
+            <h2 class="container-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card animate-child">
+                    <figure>
+                        <img loading="lazy" src="img/Html5.png" alt="HTML5" class="skill-icon" />
+                    </figure>
+                    <article>
+                        <h3>HTML5</h3>
+                        <p>Semantic and accessible markup</p>
+                    </article>
+                </div>
+                <div class="skill-card animate-child">
+                    <figure>
+                        <img loading="lazy" src="img/CSS3.png" alt="CSS3" class="skill-icon" />
+                    </figure>
+                    <article>
+                        <h3>CSS3</h3>
+                        <p>Responsive design and animations</p>
+                    </article>
+                </div>
+                <div class="skill-card animate-child">
+                    <figure>
+                        <img loading="lazy" src="img/JavaScript.png" alt="JavaScript" class="skill-icon" />
+                    </figure>
+                    <article>
+                        <h3>JavaScript</h3>
+                        <p>ES6+, DOM manipulation, and APIs</p>
+                    </article>
+                </div>
+                <div class="skill-card animate-child">
+                    <figure>
+                        <img loading="lazy" src="img/React.png" alt="React" class="skill-icon" />
+                    </figure>
+                    <article>
+                        <h3>React</h3>
+                        <p>Component-based UI and hooks</p>
+                    </article>
+                </div>
             </div>
-        </nav>
-    </header>
-    <!------------Home--------------->
-    <section id="Home" class="Home">
-        <canvas id="canvas"></canvas>
-        <div class="Home-content">
-            <div class="introduction">
-                <h1 id="Home" class="shiny-text fw-bolder my-4">Omar Hosny</h1>
-                <article class="animated-text">
-                    I'm a <span></span>
-                    <p>
-                        I create beautiful, functional websites with clean code and modern design principles. Passionate
-                        about
-                        user experience and responsive design.
-                    </p>
-                </article>
-                <div class="links">
-                    <ul class="social-links">
-                        <li><a href="https://github.com/Omarhosny1" aria-label="omar hosny Github Profile"><i
-                                    class='bx bxl-github'></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/omar-hosny-732021390/"
-                                aria-label="omar hosny LinkedIn Profile"><i class='bx bxl-linkedin-square'></i></a></li>
-                        <li><a href="https://www.instagram.com/omar.hosny.732021390"
-                                aria-label="omar hosny Instagram Profile"><i class='bx bxl-instagram'></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/omar-hosny-732021390/"
-                                aria-label="omar hosny LinkedIn Profile"><i class='bx bxl-linkedin-square'></i></a></li>
-                        <li><a href="https://wa.me/2001223891024" aria-label="omar hosny WhatsApp Profile"><i
-                                    class='bx bxl-whatsapp'></i></a></li>
-                    </ul>
-                </div>
-                <div class="cta-buttons">
-                    <ul class="social-links">
-                        <li><a class="btn btn-primary" href="CV/Omar-hosny-FlowCV-Resume-20251023.pdf" Download>Download
-                                CV</a></li>
-                        <li><a href="#Contact" class="btn btn-secoundry">Contact Me</a></li>
-                    </ul>
-                </div>
+        </section>
 
-            </div>
-            <figure class="photo1 ratio ratio-1x1 mx-auto" style="width: 320px;">
-                <img loading="lazy" class="w-100 h-100 rounded-circle " src="./img/Presonal Photo.jpg"
-                    alt="Omar Hosny Photo">
-            </figure>
-        </div>
-    </section>
-    <!--------------about----------->
-    <section id="About" class="about animate-on-scroll">
-        <h2 class="container-title">About Me</h2>
-        <div class="about-content" id="about-content">
-            <div class="Technical-Skills w-75">
-                <div class="shadow w-100 p-2 rounded-4 d-flex align-items-center gap-3 mb-4 animate-child">
-                    <div class="icon rounded-3 text-center p-2" aria-label="Web Development Icon"><i
-                            class='bx bx-code-alt bx-tada fs-1'></i></div>
-                    <article class="discription">
-                        <h4>Web Development</h4>
-                        <p>Creating responsive websites and web applications with modern frameworks.</p>
-                    </article>
+        <!-------------Contact------------>
+        <section id="Contact" class="Contact animate-on-scroll">
+            <h2 class="container-title">Get In Touch</h2>
+            <div class="content-contact">
+                <div class="contact-content">
+                    <div class="left animate-child">
+                        <div class="icons" aria-label="Email icon">
+                            <i aria-hidden="true" class='bx bx-envelope'></i>
+                        </div>
+                        <article class="text1">
+                            <h3>Email</h3>
+                            <p><a class="text-light" href="mailto:Omhosny66@gmail.com">Omhosny66@gmail.com</a></p>
+                        </article>
+                    </div>
+                    <div class="left animate-child">
+                        <div class="icons" aria-label="Phone icon">
+                            <i aria-hidden="true" class='bx bxs-phone'></i>
+                        </div>
+                        <article class="text1">
+                            <h3>Phone</h3>
+                            <p><a class="text-light" href="tel:+201225893594">+201225893594</a></p>
+                        </article>
+                    </div>
+                    <div class="left animate-child">
+                        <div class="icons" aria-label="Location icon">
+                            <i aria-hidden="true" class='bx bxs-map'></i>
+                        </div>
+                        <article class="text1">
+                            <h3>Location</h3>
+                            <p>Egypt, Qalyubia</p>
+                        </article>
+                    </div>
                 </div>
-                <div class="w-100 shadow p-2 rounded-4 d-flex align-items-center gap-3 mb-4 animate-child">
-                    <div class="icon rounded-3 text-center p-2" aria-label="Project Management Icon"><i
-                            class='bx bxs-briefcase-alt-2 bx-flashing fs-1'></i></div>
-                    <article class="discription">
-                        <h4>Project Management</h4>
-                        <p>Leading Projects from conception to completion with agile methodologles.</p>
-                    </article>
-                </div>
-                <div class="w-100 shadow p-2 rounded-4 d-flex align-items-center gap-3 mb-4 animate-child">
-                    <div class="icon rounded-3 text-center p-2" aria-label="SEO & Accessibility Icon"><i
-                            class='bx bx-bulb bx-tada fs-1'></i></div>
-                    <article class="discription">
-                        <h4>Improving SEO & Accessibility</h4>
-                        <p>Building Accessible, SEO-Friendly & High-Performance Web Experiences.</p>
-                    </article>
-                </div>
-            </div>
+                <div class="label animate-child shadow ">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="Name" class="form-label">Name</label>
+                            <input type="text" class="form-control " id="Name" required>
 
-            <article class="about-text">
-                <h3 class="animate-child">My Journey in Web Development</h3>
-                <p class="animate-child">
-                    I specialize in creating responsive,
-                    accessible websites that provide exceptional user experiences. I'm passionate about clean code
-                    and modern JavaScript frameworks.
-                    <br>My approach combines technical expertise with creative problem-solving to deliver solutions
-                    that meet both business objectives and user needs. I stay current with the latest web
-                    technologies and design trends.
-                    <br>When I'm not coding, you can find me reading about emerging technologies.
-                </p>
-            </article>
-        </div>
-    </section>
-    <!---------Projects--------->
-    <section id="Projects" class="Projects animate-on-scroll">
-        <h2 class="container-title">My Projects</h2>
-        <div class='w-100 d-flex justify-content-center gap-3 my-5 flex-wrap'>
-            <ul class="filter-buttons">
-                <li><button class='btn btn-primary filter' data-filter="All" onclick="filterItems('All')">All</button>
-                </li>
-                <li><button class='btn btn-primary filter' data-filter="HTML-CSS"
-                        onclick="filterItems('HTML-CSS')">HTML-CSS</button></li>
-                <li><button class='btn btn-primary filter' data-filter="HTML-CSS-JS"
-                        onclick="filterItems('HTML-CSS-JS')">HTML-CSS-JS</button></li>
-                <li><button class='btn btn-primary filter' data-filter="React.js"
-                        onclick="filterItems('React.js')">React.js</button></li>
-            </ul>
-        </div>
-        <div class="content-projects p-2 mx-lg-5 my-5 animate-child">
-            <div class="card w-100 hover text-center project HTML-CSS-JS" style="width: 18rem;">
-                <figure>
-                    <img loading="lazy" src="img/CinaVerse.png" class="card-img-top animate-child " alt="CinaVerse">
-                </figure>
-                <article class="card-body">
-                    <h4 class="card-title ">CinaVerse</h4>
-                    <p class="card-text text-white-50">A website for team Fluter make application Films and you can
-                        download application, the website is responsive and clean</p>
-                </article>
-                <div>
-                    <ul class="card-links">
-                        <li><a href="https://omarhosny1.github.io/varse/" class="btn btn-primary ">Demo</a></li>
-                        <li><a href="https://github.com/Omarhosny1/varse" class="btn btn-secondary">Code</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card animate-child w-100 text-center  project HTML-CSS" style="width: 18rem;">
-                <figure>
-                    <img loading="lazy" src="img/Copy History.png" class="card-img-top animate-child"
-                        alt="Copy History">
-                </figure>
-                <article class="card-body animate-child">
-                    <h4 class="card-title animate-child">A Smarter Way to Manage Your Copy History</h4>
-                    <p class="card-text animate-child text-white-50">This is clean and modern landing page desugned for
-                        the clipboard app,
-                        which helps users track and organize everything they copy across multiple devices.</p>
-                </article>
-                <div>
-                    <ul class="card-links">
-                        <li><a href="https://omarhosny1.github.io/copyHestory/" class="btn btn-primary">Demo</a></li>
-                        <li><a href="https://github.com/Omarhosny1/copyHestory" class="btn btn-secondary">Code</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card animate-child w-100 text-center project HTML-CSS-JS" style="width: 18rem;">
-                <figure>
-                    <img loading="lazy" src="img/DigitalBank.png" alt="DigitalBank" class="card-img-top animate-child ">
-                </figure>
-                <article class="card-body animate-child">
-                    <h4 class="card-title animate-child">DigitalBank</h4>
-                    <p class="card-text animate-child text-white-50">Take your financial life online. Your Digitalbank
-                        account will be a one-stop-shop for spending,
-                        saving, budgeting, investing, and much more.</p>
-                </article>
-                <div>
-                    <ul class="card-links">
-                        <li><a href="https://omarhosny1.github.io/DigitalBank/" class="btn btn-primary">Demo</a></li>
-                        <li><a href="https://github.com/Omarhosny1/DigitalBank" class="btn btn-secondary">Code</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card animate-child w-100 text-center project HTML-CSS" style="width: 18rem;">
-                <figure>
-                    <img loading="lazy" src="img/GDG.png" class="card-img-top animate-child "
-                        alt="Final Project in GDG">
-                </figure>
-                <article class="card-body animate-child">
-                    <h4 class="card-title animate-child">Final Project in GDG</h4>
-                    <p class="card-text animate-child text-white-50">Final Project in GDG use HTML and Css</p>
-                </article>
-                <div>
-                    <ul class="card-links">
-                        <li><a href="https://omarhosny1.github.io/GDGCompitition/" class="btn btn-primary">Demo</a></li>
-                        <li><a href="https://github.com/Omarhosny1/GDGCompitition" class="btn btn-secondary">Code</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card animate-child w-100 text-center project HTML-CSS" style="width: 18rem;">
-                <figure>
-                    <img loading="lazy" src="img/Dashboard.png" class="card-img-top animate-child " alt="Dashboard">
-                </figure>
-                <article class="card-body animate-child">
-                    <h4 class="card-title animate-child">Dashboard</h4>
-                    <p class="card-text animate-child text-white-50">A smart and user-friendly dashboard that provides
-                        real-time insights into users, posts, products, and revenue, along with a detailed product table
-                        showing prices and stock quantities.</p>
-                </article>
-                <div>
-                    <ul class="card-links">
-                        <li><a href="https://omarhosny1.github.io/Dashboard/" class="btn btn-primary">Demo</a></li>
-                        <li><a href="https://github.com/Omarhosny1/Dashboard" class="btn btn-secondary">Code</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card animate-child w-100 text-center project HTML-CSS" style="width: 18rem;">
-                <figure>
-                    <img loading="lazy" src="img/Mini Project.png" class="card-img-top animate-child "
-                        alt="miniProject in ITI">
-                </figure>
-                <article class="card-body animate-child">
-                    <h4 class="card-title animate-child">mini Project</h4>
-                    <p class="card-text animate-child text-white-50">A smart mini Project in ITI Benha use HTML and CSS
-                    </p>
-                </article>
-                <div>
-                    <ul class="card-links">
-                        <li><a href="https://omarhosny1.github.io/miniProject/" class="btn btn-primary">Demo</a></li>
-                        <li><a href="https://github.com/Omarhosny1/miniProject" class="btn btn-secondary">Code</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card animate-child w-100 text-center project React.js" style="width: 18rem;">
-                <figure>
-                    <img loading="lazy" src="img/Final Project.png" class="card-img-top animate-child "
-                        alt="E-Commerce">
-                </figure>
-                <article class="card-body animate-child">
-                    <h4 class="card-title animate-child">E-Commerce</h4>
-                    <p class="card-text animate-child text-white-50">Discover the latest in tech with M&O Online
-                        Shopping!
-                        Shop top-quality laptops, smartphones, tablets, and smartwatches from leading brands.</p>
-                </article>
-                <div>
-                    <ul class="card-links">
-                        <li><a href="https://omarhosny1.github.io/DigitalBank/" class="btn btn-primary">Demo</a></li>
-                        <li><a href="https://github.com/Omarhosny1/DigitalBank" class="btn btn-secondary">Code</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card animate-child w-100 text-center project React.js" style="width: 18rem;">
-                <figure>
-                    <img loading="lazy" src="img/Task Manager.png" class="card-img-top animate-child "
-                        alt="Task Manager">
-                </figure>
-                <article class="card-body animate-child">
-                    <h4 class="card-title animate-child">Task Manager</h4>
-                    <p class="card-text animate-child text-white-50">Task Manager helps you organize your work, track
-                        progress, and stay productive every day.
-                        Stay on top of your goals with Task Manager — the simple and smart way to manage your tasks.</p>
-                </article>
-                <div>
-                    <ul class="card-links">
-                        <li><a href="https://taskmanagerapps1.netlify.app/" class="btn btn-primary">Demo</a></li>
-                        <li><a href="https://github.com/Omarhosny1/Task-Manager" class="btn btn-secondary">Code</a></li>
-                    </ul>
-                </div>
-            </div>
-    </section>
-    <!--------------Skills----------------->
-    <section id="Skills" class="skills-section animate-on-scroll">
-        <h2 class="container-title">My Skills</h2>
-        <div class="skills-container">
-            <div class="skill-card animate-child">
-                <figure>
-                    <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML5"
-                        class="skill-icon" />
-                </figure>
-                <article>
-                    <h3>HTML5</h3>
-                    <p>Semantic and accessible markup</p>
-                </article>
-            </div>
-            <div class="skill-card animate-child">
-                <figure>
-                    <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3"
-                        class="skill-icon" />
-                </figure>
-                <article>
-                    <h3>CSS3</h3>
-                    <p>Responsive design and animations</p>
-                </article>
-            </div>
-            <div class="skill-card animate-child">
-                <figure>
-                    <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript"
-                        class="skill-icon" />
-                </figure>
-                <article>
-                    <h3>JavaScript</h3>
-                    <p>ES6+, DOM manipulation, and APIs</p>
-                </article>
-            </div>
-            <div class="skill-card animate-child">
-                <figure>
-                    <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React"
-                        class="skill-icon" />
-                </figure>
-                <article>
-                    <h3>React</h3>
-                    <p>Component-based UI and hooks</p>
-                </article>
-            </div>
-        </div>
-    </section>
+                            <label for="exampleFormControlInput1" class="form-label my-2">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com" required>
 
-    <!-------------Contact------------>
-    <section id="Contact" class="Contact animate-on-scroll">
-        <h2 class="container-title">Get In Touch</h2>
-        <div class="content-contact">
-            <div class="contact-content">
-                <div class="left animate-child">
-                    <div class="icons" aria-label="Email icon">
-                        <i class='bx bx-envelope'></i>
-                    </div>
-                    <article class="text1">
-                        <h3>Email</h3>
-                        <p><a class="text-light" href="mailto:Omhosny66@gmail.com">Omhosny66@gmail.com</a></p>
-                    </article>
-                </div>
-                <div class="left animate-child">
-                    <div class="icons" aria-label="Phone icon">
-                        <i class='bx bxs-phone'></i>
-                    </div>
-                    <article class="text1">
-                        <h3>Phone</h3>
-                        <p><a class="text-light" href="tel:+201225893594">+201225893594</a></p>
-                    </article>
-                </div>
-                <div class="left animate-child">
-                    <div class="icons" aria-label="Location icon">
-                        <i class='bx bxs-map'></i>
-                    </div>
-                    <article class="text1">
-                        <h3>Location</h3>
-                        <p>Egypt, Qalyubia</p>
-                    </article>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control my-2" id="exampleFormControlTextarea1" rows="3"
+                                required></textarea>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="label animate-child shadow ">
-                <form action="">
-                    <div class="mb-3">
-                        <label for="Name" class="form-label">Name</label>
-                        <input type="text" class="form-control " id="Name" required>
-
-                        <label for="exampleFormControlInput1" class="form-label my-2">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com" required>
-
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                        <textarea class="form-control my-2" id="exampleFormControlTextarea1" rows="3"
-                            required></textarea>
-                    </div>
-                    <div class="col-auto">
-                        <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
-                    </div>
-                </form>
+        </section>
+        <!-------- footer--- -->
+        <footer>
+            <div class="footer-links">
+                <ul class="social-links">
+                    <li><a href="https://github.com/Omarhosny1">github</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
             </div>
-        </div>
-    </section>
-    <!-------- footer--- -->
-    <footer>
-        <div class="footer-links">
-            <ul class="social-links">
-                <li><a href="https://github.com/Omarhosny1">github</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </div>
-        <p class="footer-text">&copy; 2025 Omar Hosny. All rights reserved.</p>
-    </footer>
+            <p class="footer-text">&copy; 2025 Omar Hosny. All rights reserved.</p>
+        </footer>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
