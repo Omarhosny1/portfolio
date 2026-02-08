@@ -669,7 +669,8 @@ footer p {
 }
 
 .footer-links a {
-    color: gray;
+    color: rgb(224, 224, 224);
+    font-size: 1.25em;
 }
 
 /* responsive */
