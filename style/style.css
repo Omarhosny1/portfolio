@@ -89,6 +89,8 @@ li {
     flex-direction: column;
     gap: 6px;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
 .menu-toggle span:nth-child(1) {
