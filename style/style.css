@@ -37,7 +37,7 @@ li {
 }
 
 .navbar span {
-    font-size: 3em;
+    font-size: clamp(1.5em, 4vw, 2em);
     font-weight: 600;
     width: 30%;
     color: rgb(130, 248, 13);
@@ -312,7 +312,7 @@ canvas {
     transform: translateY(-5px);
 }
 
-.bxl-whatsapp:hover {
+.social-links .bxl-whatsapp:hover {
     transform: translateY(-5px);
     color: white;
     background-color: chartreuse;
@@ -455,6 +455,7 @@ canvas {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1em;
     margin-bottom: 2em;
 }
@@ -467,7 +468,7 @@ canvas {
     /* width: 100%; */
     background-color: #30353f;
     transition: all 0.5s ease;
-    height: 60vh;
+    /* height: 60vh; */
 }
 
 .card-links {
@@ -601,18 +602,15 @@ canvas {
 .content-contact {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-}
-
-.contact-content {
-    display: grid;
-    gap: 1em;
+    place-items: center;
+    gap: 2em;
 }
 
 .left {
     background-color: #1f242d;
     display: flex;
     padding: 1em;
+    width: 100%;
     /* margin-top: 3em; */
 }
 
@@ -630,22 +628,6 @@ canvas {
     color: chartreuse;
     font-size: 1.5em;
     font-weight: bold;
-}
-
-.label {
-    width: 90%;
-    padding: 3em;
-    background-color: #30353f;
-    border-radius: 10px;
-    margin-top: 5em;
-}
-
-.label.animate-child {
-    animation: sideUp 2s ease 0.9s backwards;
-}
-
-label {
-    color: chartreuse;
 }
 
 /* ---------footer---------- */
@@ -675,8 +657,8 @@ footer p {
 
 /* responsive */
 @media (max-width:1200px) {
-    header {
-        height: 12vh;
+    .navbar {
+        height: auto;
     }
 
     .Home {
@@ -765,6 +747,10 @@ footer p {
         height: 100%;
     }
 
+    .social-links {
+        justify-content: center;
+    }
+
     .about-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -772,6 +758,11 @@ footer p {
 
     .about-content .about-text {
         text-align: center;
+    }
+    .about-technical{
+        display: flex;
+        flex-direction: column;
+        
     }
 
     .content-contact {
