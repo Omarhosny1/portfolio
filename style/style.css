@@ -21,16 +21,30 @@ a {
 li {
     list-style-type: none;
 }
+section, footer,  nav {
+    display: grid;
+    grid-template-columns:
+      1fr 90% 1fr;
+  }
+  
+  section > *, footer > *, nav > * {
+    grid-column: 2;
+  }
 
 /* ------------------Navbar------------------------------ */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .navbar {
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
+    width: min(90%, 1500px);
     top: 0;
-    width: 100%;
     background-color: rgb(31, 36, 45, 0.8);
     z-index: 1000;
     height: 10vh;
@@ -145,7 +159,6 @@ canvas {
 
 .introduction {
     width: 100%;
-    padding: 0 0 0 1em;
     animation: sideUp 1s ease 0.9s backwards;
 }
 
@@ -155,6 +168,7 @@ canvas {
     background-clip: text;
     color: transparent;
     animation: sideUp 1s ease 1s backwards;
+    font-display: swap;
 }
 
 .animated-text {
@@ -280,7 +294,7 @@ canvas {
     transform: translateY(-5px);
 }
 
-.links a i {
+.links a svg {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -295,37 +309,23 @@ canvas {
     animation: sideUp 1s ease var(--delay) backwards;
 }
 
-.links a:nth-child(1) i {
+.links a:nth-child(1) svg {
     --delay: 1.2s;
 }
 
-.links a:nth-child(2) i {
+.links a:nth-child(2) svg {
     --delay: 1.3s;
 }
 
-.links a:nth-child(3) i {
+.links a:nth-child(3) svg {
     --delay: 1.4s;
 }
 
-.bxl-github:hover {
+.links a svg:hover {
     background: chartreuse;
     box-shadow: 0 0 25px chartreuse;
     color: white;
     transform: translateY(-5px);
-}
-
-.social-links .bxl-whatsapp:hover {
-    transform: translateY(-5px);
-    color: white;
-    background-color: chartreuse;
-    box-shadow: 0 0 25px chartreuse;
-}
-
-.bxl-linkedin-square:hover {
-    transform: translateY(-5px);
-    color: white;
-    background-color: chartreuse;
-    box-shadow: 0 0 25px chartreuse;
 }
 
 .photo1 {
@@ -394,6 +394,7 @@ canvas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     place-items: center;
+    gap: 2em;
     margin: 2em 0;
 }
 
@@ -409,11 +410,25 @@ canvas {
     padding: 1em 0;
 }
 
-.icon {
-    width: 4em;
-    height: 3.5em;
+.icon svg{
+    width: 50px;
+    height: 50px;
+    color: white;
     text-align: center;
-    background-color: #30353f;
+    border-radius: 10px;
+    animation: rotate 0.5s linear infinite;
+    transform-origin: center;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(-15deg);
+    }
 }
 
 .discription h4 {
@@ -438,7 +453,9 @@ canvas {
 }
 
 .about-text p {
-    font-size: 1em;
+    font-size: 1.2em;
+    line-height: 2;
+
 }
 
 .about-text .animate-child {
@@ -467,10 +484,13 @@ canvas {
 }
 
 .card {
-    /* width: 100%; */
     background-color: #30353f;
     transition: all 0.5s ease;
-    /* height: 60vh; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card-links {
@@ -490,6 +510,11 @@ canvas {
     color: chartreuse;
     font-weight: 600;
     font-size: 1.5em;
+}
+.card-img-top {
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+    object-position: center;
 }
 
 .card.animate-child {
@@ -529,82 +554,42 @@ canvas {
 }
 
 /* -----------Skills------------------- */
-.skills-section {
-    padding: 3.5em 1.25em;
-    background-color: #1f242d;
-    text-align: center;
+.Front-end h3 {
+    font-size: 1.5em;
+    font-weight: 800;
+    background: linear-gradient(to right, #a8ff00, #d4ff6b);
+    background-clip: text;
+    color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
 }
-
-.skills-section.animate-child {
-    animation: sideUp 2s ease 0.6s backwards;
-}
-
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    place-items: center;
-    gap: 40px;
-    margin: 3em 1em 0 1em;
-}
-
-.skill-card {
-    background: #30353f;
-    text-align: center;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    padding: 2em 1.25em;
-    width: 100%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill-card.animate-child {
-    animation: sideUp 2s ease var(--delay) backwards;
-}
-
-.skill-card:nth-child(1) {
-    --delay: 0.7s;
-}
-
-.skill-card:nth-child(2) {
-    --delay: 0.8s;
-}
-
-.skill-card:nth-child(3) {
-    --delay: 0.9s;
-}
-
-.skill-card:nth-child(4) {
-    --delay: 1s;
-}
-
-.skill-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-}
-
-.skill-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 20px;
-}
-
-.skill-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+.Front-end span:nth-child(1) {
+    font-size: 1.25em;
+    font-weight: 600;
     color: chartreuse;
+    display: block;
+    margin-bottom: 0.5em;
 }
-
-.skill-card p {
-    font-size: 0.95rem;
-    color: white;
-    line-height: 1.4;
+.Front-end span:nth-child(2) {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: wheat;
+    display: block;
+    margin-bottom: 0.5em;
 }
-
+.Front-end .progress {
+    background-color: #1f242d;
+    
+}
+.Front-end .progress-bar {
+    background-color: chartreuse;
+    border-radius: 10px; ;
+}
 /* ----------Contact----------- */
 .content-contact {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    place-items: center;
     gap: 2em;
 }
 
@@ -613,7 +598,30 @@ canvas {
     display: flex;
     padding: 1em;
     width: 100%;
-    /* margin-top: 3em; */
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form form{
+    width: 100%;
+}
+.form input,
+.form textarea {
+    border: 2px solid chartreuse;
+    color: white;
+    padding: 0.75em;
+    transition: all 0.5s ease;
+    width: 100%;
+}
+.form input:focus,
+.form textarea:focus {
+    outline: none;
+    border-color: chartreuse;
+    box-shadow: 0 0 10px chartreuse;
 }
 
 .left.animate-child {
@@ -655,6 +663,9 @@ footer p {
 .footer-links a {
     color: rgb(224, 224, 224);
     font-size: 1.25em;
+}
+.footer-text{
+    text-align: center;
 }
 
 /* responsive */
