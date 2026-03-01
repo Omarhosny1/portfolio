@@ -21,22 +21,28 @@ a {
 li {
     list-style-type: none;
 }
-section, footer,  nav {
+
+section,
+footer,
+nav {
     display: grid;
     grid-template-columns:
-      1fr 90% 1fr;
-  }
-  
-  section > *, footer > *, nav > * {
+        1fr 90% 1fr;
+}
+
+section>*,
+footer>*,
+nav>* {
     grid-column: 2;
-  }
+}
 
 /* ------------------Navbar------------------------------ */
-header{
+header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .navbar {
     color: white;
     display: flex;
@@ -410,7 +416,7 @@ canvas {
     padding: 1em 0;
 }
 
-.icon svg{
+.icon svg {
     width: 50px;
     height: 50px;
     color: white;
@@ -419,14 +425,17 @@ canvas {
     animation: rotate 0.5s linear infinite;
     transform-origin: center;
 }
+
 @keyframes rotate {
-    0%{
+    0% {
         transform: rotate(-15deg);
     }
-    50%{
+
+    50% {
         transform: rotate(15deg);
     }
-    100%{
+
+    100% {
         transform: rotate(-15deg);
     }
 }
@@ -483,6 +492,28 @@ canvas {
     animation: sideUp 1s ease 0.9s backwards;
 }
 
+.feuture {
+    margin-top: 1em;
+}
+
+.feuture ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 0;
+}
+
+.feuture ul li {
+    color: chartreuse;
+    background-color: #1f242d;
+    font-size: clamp(1em, 2vw, 1.25em);
+    font-weight: 600;
+    padding: 0.25em 0.5em;
+    border-radius: 20px;
+}
+
 .card {
     background-color: #30353f;
     transition: all 0.5s ease;
@@ -491,6 +522,7 @@ canvas {
     flex-direction: column;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .card-links {
@@ -506,15 +538,21 @@ canvas {
     transform: translateY(-5px);
 }
 
+.card:hover img {
+    transform: scale(1.05);
+}
+
 .card-title {
     color: chartreuse;
     font-weight: 600;
     font-size: 1.5em;
 }
+
 .card-img-top {
     border-radius: 12px 12px 0 0;
     object-fit: cover;
     object-position: center;
+    transition: all 0.5s ease;
 }
 
 .card.animate-child {
@@ -564,6 +602,7 @@ canvas {
     background-repeat: no-repeat;
     margin-bottom: 1em;
 }
+
 .Front-end span:nth-child(1) {
     font-size: 1.25em;
     font-weight: 600;
@@ -571,6 +610,7 @@ canvas {
     display: block;
     margin-bottom: 0.5em;
 }
+
 .Front-end span:nth-child(2) {
     font-size: 1.25em;
     font-weight: 600;
@@ -578,37 +618,50 @@ canvas {
     display: block;
     margin-bottom: 0.5em;
 }
+
 .Front-end .progress {
     background-color: #1f242d;
-    
+
 }
+
 .Front-end .progress-bar {
     background-color: chartreuse;
-    border-radius: 10px; ;
+    border-radius: 10px;
+    ;
 }
+
 /* ----------Contact----------- */
 .content-contact {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2em;
+}
+
+.left-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    place-items: center;
+    gap: 1em;
 }
 
 .left {
     background-color: #1f242d;
     display: flex;
     padding: 1em;
-    width: 100%;
 }
-.form{
+.text1 .text{
+    color: rgb(184, 183, 183);
+    font-size: 1.25em;
+    transition: all 0.5s ease;
+}
+.text1 .text:hover {
+    color: white;
+}
+.form {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.form form{
-    width: 100%;
-}
 .form input,
 .form textarea {
     border: 2px solid chartreuse;
@@ -617,15 +670,12 @@ canvas {
     transition: all 0.5s ease;
     width: 100%;
 }
+
 .form input:focus,
 .form textarea:focus {
     outline: none;
     border-color: chartreuse;
     box-shadow: 0 0 10px chartreuse;
-}
-
-.left.animate-child {
-    animation: sideUp 2s ease 0.9s backwards;
 }
 
 .icons {
@@ -664,7 +714,8 @@ footer p {
     color: rgb(224, 224, 224);
     font-size: 1.25em;
 }
-.footer-text{
+
+.footer-text {
     text-align: center;
 }
 
@@ -772,14 +823,23 @@ footer p {
     .about-content .about-text {
         text-align: center;
     }
-    .about-technical{
+
+    .about-technical {
         display: flex;
         flex-direction: column;
-        
+
     }
 
-    .content-contact {
-        display: grid;
-        place-items: center;
+    .left {
+        width: 100%;
     }
+
+    .form {
+        width: 100% !important;
+    }
+
+    .form form {
+        width: 100% !important;
+    }
+
 }
